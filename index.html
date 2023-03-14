@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
             &#60;devalvin&#62;
         </span>
 
-        <nav>
+        <nav class="nav">
             <ul class="nav__list">
                 <li>
                     <a href="#home">Home</a>
@@ -36,5 +37,77 @@
         <h3 class="home__subtitle">Fullstack developer</h3>
         <img src="images/home.jpg" alt="picture of myself">
     </section>
+
+    <section class="services" id="services">
+        <h2 class="home__title">What I do</h2>
+        <div class="myservices">
+            <div class="service">
+                <h3 class="service__title">Frontend Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio facere quam vero repudiandae, mollitia architecto molestiae quasi commodi tempora omnis fugiat voluptatibus sunt optio.</p>
+            </div>
+            <div class="service">
+                <h3 class="service__title">Backend Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio facere quam vero repudiandae, mollitia architecto molestiae quasi commodi tempora omnis fugiat voluptatibus sunt optio.</p>
+            </div>
+            <div class="service">
+                <h3 class="service__title">UX Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio facere quam vero repudiandae, mollitia architecto molestiae quasi commodi tempora omnis fugiat voluptatibus sunt optio.</p>
+            </div>
+
+            <a href="#projects" class="btn">see my works</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="about__title">Who am I</h2>
+        <h4 class="about__subtitle">Developer and designer based out of Nairobi </h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident neque, pariatur delectus temporibus cum dignissimos, aspernatur harum, veniam velit voluptas aut obcaecati perspiciatis nulla modi enim ullam error eligendi sapiente!<br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita harum fugiat blanditiis ratione soluta iusto dolorem numquam mollitia quae architecto? Vitae perferendis repellat, eum beatae animi aut aperiam dolores illo.
+        </p>
+
+        <img src="images/home.jpg" />
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projects__intro">
+            <h2 class="projects__title">My Projects</h2>
+            <p class="intro__text">A selection of my projects</p>
+        </div>
+
+        <div class="project">
+            <img src="" alt="project-image">
+            <div class="project__description">
+                <h4 class="project__title"></h4>
+                <p class="project__text"></p>
+                <div class="links">
+                    <a href="" class="btn">Github</a>
+                    <a href="" class="btn">Live site</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="mailto:alvindon41@gmail.com">alvindon41@gmail.com</a>
+        <ul class="socials">
+            <li class="social__item">
+                <a class="social_link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social_link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social_link">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>
