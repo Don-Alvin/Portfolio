@@ -5,3 +5,168 @@
 ::after {
 	box-sizing: border-box;
 }
+
+:root {
+	--fs-h1: 3rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-p: 1rem;
+
+	--text-color: #303030;
+}
+
+@media (min-width: 800px) {
+	:root {
+		--fs-h1: 4.5rem;
+		--fs-h2: 3.75rem;
+		--fs-h3: 1.25rem;
+		--fs-p: 1.125rem;
+	}
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	line-height: 1.6;
+}
+
+h1 {
+	font-size: var(--fs-h1);
+}
+
+h2 {
+	font-size: var(--fs-h2);
+}
+
+h3 {
+	font-size: var(--fs-h3);
+	font-weight: 600;
+}
+
+p {
+	font-size: var(--fs-p);
+	color: var(--text-color);
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #303030;
+	text-decoration: none;
+}
+
+.header {
+	padding: 15px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-size: 24px;
+	color: var(--text-color);
+}
+
+nav {
+	display: flex;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+
+nav ul li a {
+	font-size: 18px;
+}
+
+#home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.home {
+	width: 50%;
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 20px;
+}
+
+.home__subtitle {
+	background-color: #16e0bd;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	display: flex;
+	padding: 10px;
+	justify-content: flex-end;
+	align-items: center;
+	height: 50px;
+	z-index: -1;
+	text-transform: uppercase;
+}
+
+.home__image {
+	width: 300px;
+	height: 300px;
+	display: block;
+
+	object-fit: cover;
+}
+
+.services {
+	position: relative;
+	margin-top: 30px;
+	width: 100%;
+	background-image: url("/images/services.png");
+	background-position: center;
+	background-repeat: none;
+	object-fit: contain;
+	padding: 40px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	align-items: center;
+}
+
+.overlay {
+	position: absolute;
+	background-color: #000000;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.services__title {
+	color: #16e0bd;
+}
+
+.myservices {
+	display: flex;
+	color: #fff;
+	justify-content: center;
+}
+
+.myservices p {
+	color: #fff;
+}
+
+.service {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 30%;
+}
